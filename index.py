@@ -1,35 +1,32 @@
-from modules.facecv import FaceCV,get_args,session
-from flask import Flask
+from flask import Flask,session,render_template,redirect,url_for
+from modules.get_key import get_key
 
 app=Flask(__name__)
+app.secret_key='hello'
 
 @app.route("/")
 def home():
-    return "<h1>Hello World</h1>"
+    if 'fuzzy' not in session:
+        session['fuzzy']=get_key()
+
+    print('\n\n\nSession Key: '+str(session['fuzzy']))
+    try:
+        return render_template(str(session['fuzzy'])+"/"+"index.html")
+    except:
+        return render_template("5/"+"index.html")
 
 
+@app.route('/pop')
+def pop():
+    session.pop('fuzzy',None)
+    session.pop('key',None)
+    return redirect(url_for("home"))
 
 
 def main():
-    #Face Recognition
-    args = get_args()
-    depth = args.depth
-    width = args.width
-
-    face = FaceCV(depth=depth, width=width)
-
-    predicted_ages,predicted_genders=face.detect_face()
-
-    if predicted_genders<=0.5:
-        predicted_genders="Female"
-    else:
-        predicted_genders="Male"
 
     #Web Forming
-    session['gender']=predicted_genders
-    session['age']=predicted_ages
-    
-    app.run()
+    app.run(debug=True)
 
 if __name__=='__main__':
     main()
