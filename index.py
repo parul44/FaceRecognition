@@ -1,4 +1,4 @@
-from modules.facecv import FaceCV,get_args
+from modules.facecv import FaceCV,get_args,session
 from flask import Flask
 
 app=Flask(__name__)
@@ -24,11 +24,11 @@ def main():
         predicted_genders="Female"
     else:
         predicted_genders="Male"
-        
-    print(predicted_ages)
-    print(predicted_genders)
 
     #Web Forming
+    session['gender']=predicted_genders
+    session['age']=predicted_ages
+    
     app.run()
 
 if __name__=='__main__':
