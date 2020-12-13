@@ -1,4 +1,4 @@
-Templates changes with Gender
+Add Templates for
 
 0       |Girl Child(0-10)
 2.5     |Girl(10-15)
@@ -12,3 +12,7 @@ Templates changes with Gender
 55      |Late Teen(20-30)
 57.5    |Middle Age(30-40)
 60      |Man(40-Above)
+
+Done For
+3.75    |Teen(15-20)
+5       |Lady(20-30)

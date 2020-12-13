@@ -1,6 +1,6 @@
 from .facecv import FaceCV,get_args
 from .fuzzy import findClosest
-
+from keras import backend as K
 
 def get_key():
     #Face Recognition
@@ -14,5 +14,5 @@ def get_key():
 
     #Calculating Session Key
     fuzzy=findClosest(predicted_genders*50+predicted_ages/4)
-
+    K.clear_session()
     return fuzzy

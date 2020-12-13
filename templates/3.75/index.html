@@ -23,10 +23,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         }
     </script>
     <!-- Custom Theme files -->
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='3.75/css/bootstrap.css') }}" type="text/css" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='3.75/css/style.css') }}" type="text/css" rel="stylesheet" media="all">
     <!-- font-awesome icons -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='3.75/css/font-awesome.css') }}" rel="stylesheet">
     <!-- //Custom Theme files -->
     <!-- online-fonts -->
     <link href="//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
@@ -145,11 +145,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             aria-hidden="true"></span></a>
                 </div>
                 <div class="col-lg-3 col-sm-6 abbot-right mt-lg-0 mt-3">
-                    <img src="images/a3.jpg" class="img-fluid" alt="" />
+                    <img src="{{ url_for('static', filename='3.75/images/a3.jpg') }}" class="img-fluid" alt="" />
                     <div class="border-pos-wthree1"></div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mt-lg-0 mt-3 abbot-right2">
-                    <img src="images/a1.jpg" class="img-fluid" alt="" />
+                    <img src="{{ url_for('static', filename='3.75/images/a1.jpg') }}" class="img-fluid" alt="" />
                     <div class="border-pos-wthree"></div>
                 </div>
             </div>
@@ -242,7 +242,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row py-md-5">
                 <div class="col-lg-3 col-6 team-grids">
                     <div class="services-grid-w3ls">
-                        <img src="images/p1.jpg" alt="img" class="img-fluid">
+                        <img src="{{ url_for('static', filename='3.75/images/p1.jpg') }}" alt="img" class="img-fluid">
                     </div>
 
                     <div class="serv-desc-w3ls mt-3">
@@ -253,7 +253,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="col-lg-3 col-6 team-grids">
                     <div class="services-grid-w3ls">
-                        <img src="images/p2.jpg" alt="img" class="img-fluid">
+                        <img src="{{ url_for('static', filename='3.75/images/p2.jpg') }}" alt="img" class="img-fluid">
                     </div>
 
                     <div class="serv-desc-w3ls mt-3">
@@ -264,7 +264,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="col-lg-3 col-6 team-grids mt-lg-0 mt-4">
                     <div class="services-grid-w3ls">
-                        <img src="images/p3.jpg" alt="img" class="img-fluid">
+                        <img src="{{ url_for('static', filename='3.75/images/p3.jpg') }}" alt="img" class="img-fluid">
                     </div>
 
                     <div class="serv-desc-w3ls mt-3">
@@ -275,7 +275,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
                 <div class="col-lg-3 col-6 team-grids mt-lg-0 mt-4">
                     <div class="services-grid-w3ls">
-                        <img src="images/p4.jpg" alt="img" class="img-fluid">
+                        <img src="{{ url_for('static', filename='3.75/images/p4.jpg') }}" alt="img" class="img-fluid">
                     </div>
 
                     <div class="serv-desc-w3ls mt-3">
@@ -327,7 +327,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row py-md-5 pt-4">
                 <div class="col-lg-3 col-6 team-grids mb-lg-0  mb-4">
                     <div class="services-grid-w3ls">
-                        <img src="images/p3.jpg" alt="img" class="img-fluid img-thumbnail">
+                        <img src="{{ url_for('static', filename='3.75/images/p3.jpg') }}" alt="img" class="img-fluid img-thumbnail">
                     </div>
                     <div class="serv-desc-w3ls mt-3 text-center">
                         <h4>make over</h4>
@@ -339,12 +339,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
 
                     <div class="services-grid-w3ls">
-                        <img src="images/p4.jpg" alt="img" class="img-fluid img-thumbnail">
+                        <img src="{{ url_for('static', filename='3.75/images/p4.jpg') }}" alt="img" class="img-fluid img-thumbnail">
                     </div>
                 </div>
                 <div class="col-lg-3 col-6 team-grids">
                     <div class="services-grid-w3ls">
-                        <img src="images/p1.jpg" alt="img" class="img-fluid img-thumbnail">
+                        <img src="{{ url_for('static', filename='3.75/images/p1.jpg') }}" alt="img" class="img-fluid img-thumbnail">
                     </div>
                     <div class="serv-desc-w3ls mt-3 text-center">
                         <h4>fashion</h4>
@@ -355,7 +355,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <h4>elegant</h4>
                     </div>
                     <div class="services-grid-w3ls">
-                        <img src="images/p2.jpg" alt="img" class="img-fluid img-thumbnail">
+                        <img src="{{ url_for('static', filename='3.75/images/p2.jpg') }}" alt="img" class="img-fluid img-thumbnail">
                     </div>
                 </div>
             </div>
@@ -612,12 +612,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!-- // Register modal -->
     <!-- js -->
-    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="{{ url_for('static', filename='3.75/js/jquery-2.2.3.min.js') }}"></script>
     <!-- //js -->
     <!--  menu toggle -->
-    <script src="js/menu.js"></script>
+    <script src="{{ url_for('static', filename='3.75/js/menu.js') }}"></script>
     <!-- Banner  Responsiveslides -->
-    <script src="js/responsiveslides.min.js"></script>
+    <script src="{{ url_for('static', filename='3.75/js/responsiveslides.min.js') }}"></script>
     <script>
         // You can also use"$(window).load(function() {"
         $(function () {
@@ -658,8 +658,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- script for password match -->
     <!-- start-smooth-scrolling -->
-    <script src="js/move-top.js"></script>
-    <script src="js/easing.js"></script>
+    <script src="{{ url_for('static', filename='3.75/js/move-top.js') }}"></script>
+    <script src="{{ url_for('static', filename='3.75/js/easing.js') }}"></script>
     <script>
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -690,12 +690,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
         });
     </script>
-    <script src="js/SmoothScroll.min.js"></script>
+    <script src="{{ url_for('static', filename='3.75/js/SmoothScroll.min.js') }}"></script>
     <!-- //smooth-scrolling-of-move-up -->
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
+    <script src="{{ url_for('static', filename='3.75/js/bootstrap.js') }}"></script>
 </body>
 
 </html>
