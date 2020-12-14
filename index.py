@@ -1,8 +1,13 @@
 from flask import Flask,session,render_template,redirect,url_for
 from modules.get_key import get_key
+from modules.database import mongo
+from decouple import config
 
 app=Flask(__name__)
-app.secret_key='Avx8&Vnbu46%w=qygTTy7ZxMYwVt#s'
+app.config["MONGO_URI"]=config('MONGO_URI')
+mongo.init_app(app)
+
+app.secret_key=config('SECRET_KEY')
 
 @app.route("/")
 def home():
@@ -31,6 +36,7 @@ def pop():
 def check():
     print("\n\nSession Key: "+session['fuzzy'])
     return redirect(url_for("home"))
+
 
 def main():
     app.run(debug=True)
