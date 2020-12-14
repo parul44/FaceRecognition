@@ -1,32 +1,10 @@
-absl-py==0.4.1
-asgiref @ file:///tmp/build/80754af9/asgiref_1605055780383/work
-astor==0.7.1
-certifi==2020.6.20
 click==7.1.2
+dnspython==2.0.0
 Flask==1.1.2
-gast @ file:///tmp/build/80754af9/gast_1597433534803/work
-grpcio==1.12.1
-h5py==2.8.0
+Flask-PyMongo==2.3.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
-Keras==2.2.2
-Keras-Applications==1.0.4
-Keras-Preprocessing==1.0.2
-keras-squeezenet==0.4
-Markdown==2.6.11
 MarkupSafe==1.1.1
-numpy==1.18.5
-opencv-python==4.4.0.42
-protobuf==3.6.0
-psycopg2==2.7.5
-PyQt5-sip==12.8.1
-pytz==2020.4
-PyYAML==3.13
-scipy==1.1.0
-six==1.15.0
-sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
-tensorboard==1.10.0
-tensorflow==1.10.0
-termcolor==1.1.0
+pymongo==3.11.2
+python-decouple==3.3
 Werkzeug==1.0.1
-wincertstore==0.2
