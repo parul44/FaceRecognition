@@ -5,33 +5,28 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Enter Data|Face Recognition</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">  
-        <form id="contact" action="" method="post">
-          <h3>Colorlib Contact Form</h3>
-          <h4>Contact us for custom quote</h4>
+        <form id="contact" action="{{ url_for('add') }}" method="post">
+          <h3>Data Entry Form</h3>
+          <h4><a href="{{ url_for('view') }}">View Products</a></h4>
           <fieldset>
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            <input placeholder="Product name" name="name" type="text" tabindex="1" required autofocus>
           </fieldset>
           <fieldset>
-            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            <input placeholder="Product Description" name="description" type="text" tabindex="2" required>
           </fieldset>
           <fieldset>
-            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+            <input type="file" name="image" tabindex="3" required>
           </fieldset>
           <fieldset>
-            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
-          </fieldset>
-          <fieldset>
-            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            <input placeholder="Key" name="key" type="number" tabindex="4" required>
           </fieldset>
           <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
           </fieldset>
-          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
         </form>
       </div>
 </body>
