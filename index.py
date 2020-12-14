@@ -7,7 +7,7 @@ app.secret_key='Avx8&Vnbu46%w=qygTTy7ZxMYwVt#s'
 @app.route("/")
 def home():
     if 'fuzzy' not in session:
-        session['fuzzy']=get_key()
+        session['fuzzy']=float(get_key())
 
     return render_template(str(session['fuzzy'])+"/"+"index.html")
 
@@ -33,7 +33,7 @@ def check():
     return redirect(url_for("home"))
 
 def main():
-    app.run(debug=False,host='0.0.0.0')
+    app.run(debug=True)
 
 if __name__=='__main__':
     main()
