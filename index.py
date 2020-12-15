@@ -34,7 +34,7 @@ def pop():
 
 @app.route('/check')
 def check():
-    print("\n\nSession Key: "+session['fuzzy'])
+    print("\n\nSession Key: "+str(session['fuzzy']))
     return redirect(url_for("home"))
 
 
