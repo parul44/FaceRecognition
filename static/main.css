@@ -8,6 +8,11 @@ body {
 	font-family: sans-serif;
 }
 
+img{
+	padding: 0%;
+	width: 100px;
+}
+
 ul,
 li {
 	list-style: none;

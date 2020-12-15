@@ -14,17 +14,18 @@ def home():
 
 @app.route("/add",methods=['POST'])
 def add():
-    name=request.form.get('name')
-    description=request.form.get('description')
-    image=request.form.get('image')
-    key=request.form.get('key')
+    name=request.form['name']
+    description=request.form['description']
+    image=request.files['image']
+    key=float(request.form['key'])
 
     fashion_collection=mongo.db.fashion
 
+    mongo.save_file(image.filename,image)
     fashion_collection.insert_one({
         'name':name,
         'description':description,
-        'image':image,
+        'image':image.filename,
         'key':key,
     })
 
@@ -37,8 +38,12 @@ def view():
 
     return render_template("list.html",items=items)
 
+@app.route('/file/<filename>')
+def file(filename):
+    return mongo.send_file(filename)
+
 def main():
-    app.run(debug=False,host='0.0.0.0')
+    app.run(debug=True)
 
 if __name__=='__main__':
     main()

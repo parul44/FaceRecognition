@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">  
-        <form id="contact" action="{{ url_for('add') }}" method="post">
+        <form id="contact" action="{{ url_for('add') }}" method="post" enctype="multipart/form-data">
           <h3>Data Entry Form</h3>
           <h4><a href="{{ url_for('view') }}">View Products</a></h4>
           <fieldset>

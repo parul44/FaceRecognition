@@ -10,29 +10,21 @@
 <body>
     
 <h2>Your Products</h2>
-<ul class="tg-list">
-  <li class="tg-list-item">
-    <h4>Product Name</h4>
-  </li>
-  <li class="tg-list-item">
-    <h4>Product Description</h4>
-  </li>
-  <li class="tg-list-item">
-    <h4>Key</h4>
-  </li>
-</ul>
-{% for item in items %}
-<ul class="tg-list">
-    <li class="tg-list-item">
-      <h4>{{item.name}}</h4>
-    </li>
-    <li class="tg-list-item">
-      <h4>{{item.description}}</h4>
-    </li>
-    <li class="tg-list-item">
-      <h4>{{item.key}}</h4>
-    </li>
-  </ul>
-{% endfor %}
+<table style="width:50%">
+  <tr class="tg-list">
+    <th class="tg-list-item">Image</th>
+    <th class="tg-list-item">Product Name</th>
+    <th class="tg-list-item">Product Description</th>
+    <th class="tg-list-item">Key</th>
+  </tr>
+  {% for item in items %}
+  <tr class="tg-list">
+    <td class="tg-list-item"><img src="file/{{item.image}}" alt="No Image Available"></td>
+    <td class="tg-list-item"><h4>{{item.name}}</h4></td>
+    <td class="tg-list-item"><p>{{item.description}}</p></td>
+    <td class="tg-list-item"><h4>{{item.key}}</h4></td>
+  </tr>
+  {% endfor %}
+</table>
 </body>
 </html>
