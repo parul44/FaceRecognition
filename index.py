@@ -14,6 +14,13 @@ def home():
     if 'fuzzy' not in session:
         session['fuzzy']=float(get_key())
 
+    fashion_collection=mongo.db.fashion
+    items=fashion_collection.find({
+        'key':session['fuzzy']
+        })
+
+    print("\n\n\n"+str(items)+"\n\n\n")
+
     return render_template(str(session['fuzzy'])+"/"+"index.html")
 
 @app.route('/set/<key>')
@@ -37,6 +44,9 @@ def check():
     print("\n\nSession Key: "+str(session['fuzzy']))
     return redirect(url_for("home"))
 
+@app.route('/file/<filename>')
+def file(filename):
+    return mongo.send_file(filename)
 
 def main():
     app.run(debug=True)
