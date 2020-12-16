@@ -9,7 +9,7 @@ Add Templates for
 12.5    |Women(60-Above)
 50      |Boy Child(0-10)
 52.5    |Boy(10-15)
-53.75   |Young Teen(15-20)
+53.75   |Young Teen(15-20)* Has to be changed
 55      |Late Teen(20-30)
 57.5    |Middle Age(30-40)
 60      |Man(40-60)
