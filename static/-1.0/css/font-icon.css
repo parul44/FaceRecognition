@@ -301,7 +301,9 @@
 
 .icon-twitter:before {
   content: "\e05e"; }
-
+  .fa-twitter-square:before {
+    content: "\f081";
+  }
 .icon-googleplus:before {
   content: "\e05f"; }
 

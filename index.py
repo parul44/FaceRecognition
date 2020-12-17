@@ -1,6 +1,7 @@
 from flask import Flask,session,render_template,redirect,url_for
 from modules.get_key import get_key
 from modules.database import mongo
+from modules.fuzzy import findClosest
 from decouple import config
 
 app=Flask(__name__)
@@ -15,16 +16,17 @@ def home():
         try:
             session['fuzzy']=str(get_key())
         except:
-            session['fuzzy']=str(-1)
+            session['fuzzy']=str(float(-1))
 
     return render_template((str(session['fuzzy']))+"/"+"index.html")
 
 @app.route('/set/<key>')
 def set_key(key):
+    key=findClosest(float(key))
     try:
-        key=float(key)
+        key=str(key)
     except:
-        key=5
+        key=str(-1)
 
     session['fuzzy']=key
     
