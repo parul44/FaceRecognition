@@ -24,3 +24,4 @@ Done For
 57.5    |Middle Age(30-40)
 50      |Boy Child(0-10)
 62.5    |Man(60-Above)
+Yo
