@@ -1,26 +1,14 @@
-Add Templates for
+Template Code
 
-0       |Girl Child(0-10)
-2.5     |Girl(10-15)
-3.75    |Teen(15-20)
-5       |Lady(20-30)
-7.5     |Women(30-40)
-10      |Women(40-60)
-12.5    |Women(60-Above)
-50      |Boy Child(0-10)
-52.5    |Boy(10-15)
-53.75   |Young Teen(15-20)* Has to be changed
-55      |Late Teen(20-30)
-57.5    |Middle Age(30-40)
-60      |Man(40-60)
-62.5    |Man(60-Above)
+-1          |       Default
 
-Done For
-0       |Girl Child(0-10)
-3.75    |Teen(15-20)
-5       |Lady(20-30)
-12.5    |Women(60-Above)
-55      |Late Teen(20-30)
-57.5    |Middle Age(30-40)
-50      |Boy Child(0-10)
-62.5    |Man(60-Above)
+Women
+7.5         |       13 to 28
+10.5        |       29 to 50
+12.5        |       51 Above
+
+Men
+53.75       |       13 to 20
+55.0        |       21 to 35
+58.75       |       36 to 50
+62.5        |       51 Above
