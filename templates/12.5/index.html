@@ -1,220 +1,796 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
 <head>
-<title>Shop Around</title>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="{{ url_for('static', filename='12.5/css/style.css') }}" type="text/css" media="all" />
-<!--[if lte IE 6]><link rel="stylesheet" href="{{ url_for('static', filename='12.5/css/ie6.css') }}" type="text/css" media="all" /><![endif]-->
-<script src="{{ url_for('static', filename='12.5/img/js/jquery-1.4.1.min.js') }}" type="text/javascript"></script>
-<script src="{{ url_for('static', filename='12.5/img/js/jquery.jcarousel.pack.js') }}" type="text/javascript"></script>
-<script src="{{ url_for('static', filename='12.5/img/js/jquery-func.js') }}" type="text/javascript"></script>
+<title>Sewing a Fashion Category Bootstrap Responsive Website Template  | Home :: W3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Sewing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{{ url_for('static', filename='12.5/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ url_for('static', filename='12.5/css/font-awesome.css')}}" rel="stylesheet"> 
+<link href="{{ url_for('static', filename='12.5/css/simpleLightbox.css')}}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='12.5/css/text-style.css')}}"> <!--Banner-text-style -->
+<link href="{{ url_for('static', filename='12.5/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+<!--//fonts-->
+
+<link href="img/favicon.ico" rel="icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+<!-- CSS Libraries -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='12.5/lib/slick/slick.css')}}" rel="stylesheet">
+<link href="{{ url_for('static', filename='12.5/lib/slick/slick-theme.css')}}" rel="stylesheet">
 </head>
 <body>
-<!-- Shell -->
-<div class="shell">
-  <!-- Header -->
-  <div id="header">
-    <h1 id="logo"><a href="#">shoparound</a></h1>
-    <!-- Cart -->
-    <div id="cart"> <a href="#" class="cart-link">Your Shopping Cart</a>
-      <div class="cl">&nbsp;</div>
-      <span>Articles: <strong>4</strong></span> &nbsp;&nbsp; <span>Cost: <strong>$250.99</strong></span> </div>
-    <!-- End Cart -->
-    <!-- Navigation -->
-    <div id="navigation">
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">My Account</a></li>
-        <li><a href="#">The Store</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <!-- End Navigation -->
-  </div>
-  <!-- End Header -->
-  <!-- Main -->
-  <div id="main">
-    <div class="cl">&nbsp;</div>
-    <!-- Content -->
-    <div id="content">
-      <!-- Content Slider -->
-      <div id="slider" class="box">
-        <div id="slider-holder">
-          <ul>
-            <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/slide1.jpg') }}" alt="" /></a></li>
-            <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/slide1.jpg') }}" alt="" /></a></li>
-            <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/slide1.jpg') }}" alt="" /></a></li>
-            <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/slide1.jpg') }}" alt="" /></a></li>
-          </ul>
-        </div>
-        <div id="slider-nav"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
-      </div>
-      <!-- End Content Slider -->
-      <!-- Products -->
-      <div class="products">
-        <div class="cl">&nbsp;</div>
-        <ul>
-          <li> <a href="#"><img src="{{ url_for('static', filename='12.5/css/images/big1.jpg') }}" alt="" /></a>
-            <div class="product-info">
-              <h3>LOREM IPSUM</h3>
-              <div class="product-desc">
-                <h4>WOMEN’S</h4>
-                <p>Lorem ipsum dolor sit<br />
-                  amet</p>
-                <strong class="price">$58.99</strong> </div>
-            </div>
-          </li>
-          <li> <a href="#"><img src="{{ url_for('static', filename='12.5/css/images/big1.jpg') }}" alt="" /></a>
-            <div class="product-info">
-              <h3>LOREM IPSUM</h3>
-              <div class="product-desc">
-                <h4>WOMEN’S</h4>
-                <p>Lorem ipsum dolor sit<br />
-                  amet</p>
-                <strong class="price">$58.99</strong> </div>
-            </div>
-          </li>
-          <li class="last"> <a href="#"><img src="{{ url_for('static', filename='12.5/css/images/big1.jpg') }}" alt="" /></a>
-            <div class="product-info">
-              <h3>LOREM IPSUM</h3>
-              <div class="product-desc">
-                <h4>WOMEN’S</h4>
-                <p>Lorem ipsum dolor sit<br />
-                  amet</p>
-                <strong class="price">$58.99</strong> </div>
-            </div>
-          </li>
-        </ul>
-        <div class="cl">&nbsp;</div>
-      </div>
-      <!-- End Products -->
-    </div>
-    <!-- End Content -->
-    <!-- Sidebar -->
-    <div id="sidebar">
-      <!-- Search -->
-      <div class="box search">
-        <h2>Search by <span></span></h2>
-        <div class="box-content">
-          <form action="#" method="post">
-            <label>Keyword</label>
-            <input type="text" class="field" />
-            <label>Category</label>
-            <select class="field">
-              <option value="">-- Select Category --</option>
-            </select>
-            <div class="inline-field">
-              <label>Price</label>
-              <select class="field small-field">
-                <option value="">$10</option>
-              </select>
-              <label>to:</label>
-              <select class="field small-field">
-                <option value="">$50</option>
-              </select>
-            </div>
-            <input type="submit" class="search-submit" value="Search" />
-            <p> <a href="#" class="bul">Advanced search</a><br />
-              <a href="#" class="bul">Contact Customer Support</a> </p>
-          </form>
-        </div>
-      </div>
-      <!-- End Search -->
-      <!-- Categories -->
-      <div class="box categories">
-        <h2>Categories <span></span></h2>
-        <div class="box-content">
-          <ul>
-            <li><a href="#">Category 1</a></li>
-            <li><a href="#">Category 2</a></li>
-            <li><a href="#">Category 3</a></li>
-            <li><a href="#">Category 4</a></li>
-            <li><a href="#">Category 5</a></li>
-            <li><a href="#">Category 6</a></li>
-            <li><a href="#">Category 7</a></li>
-            <li><a href="#">Category 8</a></li>
-            <li><a href="#">Category 9</a></li>
-            <li><a href="#">Category 10</a></li>
-            <li><a href="#">Category 11</a></li>
-            <li><a href="#">Category 12</a></li>
-            <li class="last"><a href="#">Category 13</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End Categories -->
-    </div>
-    <!-- End Sidebar -->
-    <div class="cl">&nbsp;</div>
-  </div>
-  <!-- End Main -->
-  <!-- Side Full -->
-  <div class="side-full">
-    <!-- More Products -->
-    <div class="more-products">
-      <div class="more-products-holder">
-        <ul>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small1.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small2.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small3.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small4.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small5.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small6.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small7.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small1.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small2.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small3.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small4.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small5.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small6.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small7.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small1.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small2.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small3.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small4.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small5.jpg') }}" alt="" /></a></li>
-          <li><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small6.jpg') }}" alt="" /></a></li>
-          <li class="last"><a href="#"><img src="{{ url_for('static', filename='12.5/css/images/small7.jpg') }}" alt="" /></a></li>
-        </ul>
-      </div>
-      <div class="more-nav"> <a href="#" class="prev">previous</a> <a href="#" class="next">next</a> </div>
-    </div>
-    <!-- End More Products -->
-    <!-- Text Cols -->
-    <div class="cols">
-      <div class="cl">&nbsp;</div>
-      <div class="col">
-        <h3 class="ico ico1">Donec imperdiet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, metus ac cursus auctor, arcu felis ornare dui.</p>
-        <p class="more"><a href="#" class="bul">Lorem ipsum</a></p>
-      </div>
-      <div class="col">
-        <h3 class="ico ico2">Donec imperdiet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, metus ac cursus auctor, arcu felis ornare dui.</p>
-        <p class="more"><a href="#" class="bul">Lorem ipsum</a></p>
-      </div>
-      <div class="col">
-        <h3 class="ico ico3">Donec imperdiet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, metus ac cursus auctor, arcu felis ornare dui.</p>
-        <p class="more"><a href="#" class="bul">Lorem ipsum</a></p>
-      </div>
-      <div class="col col-last">
-        <h3 class="ico ico4">Donec imperdiet</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, metus ac cursus auctor, arcu felis ornare dui.</p>
-        <p class="more"><a href="#" class="bul">Lorem ipsum</a></p>
-      </div>
-      <div class="cl">&nbsp;</div>
-    </div>
-    <!-- End Text Cols -->
-  </div>
-  <!-- End Side Full -->
-  <!-- Footer -->
-  <div id="footer">
-    <p class="left"> <a href="#">Home</a> <span>|</span> <a href="#">Support</a> <span>|</span> <a href="#">My Account</a> <span>|</span> <a href="#">The Store</a> <span>|</span> <a href="#">Contact</a> </p>
-    <p class="right"> &copy; 2010 Shop Around. Design by <a href="http://chocotemplates.com">Chocotemplates.com</a> </p>
-  </div>
-  <!-- End Footer -->
+<!--banner start here-->
+<div class="nav">
+	<div class="container-fluid">
+		
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<a href="#" class="navbar-brand">MENU</a>
+			
+
+			<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+				<div class="navbar-nav mr-auto">
+					<a href="index.html" class="nav-item nav-link active">Home</a>
+					<a href="product-list.html" class="nav-item nav-link">Products</a>
+					<a href="product-detail.html" class="nav-item nav-link">Product Detail</a>
+					<a href="cart.html" class="nav-item nav-link">Cart</a>
+					<a href="checkout.html" class="nav-item nav-link">Checkout</a>
+					<a href="my-account.html" class="nav-item nav-link">My Account</a>
+	
+				</div>
+				<div class="navbar-nav ml-auto">
+					<div class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Login</a>
+							<a href="#" class="dropdown-item">Register</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
 </div>
-<!-- End Shell -->
+<!-- Nav Bar End -->      
+
+<!-- Bottom Bar Start -->
+<div class="bottom-bar">
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-md-3">
+				<div class="logo">
+					<a href="index.html">
+						<img src="{{ url_for('static', filename='12.5/images/logo.png')}}" alt="Logo">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="search">
+					<input type="text" placeholder="Search">
+					<button><i class="fa fa-search"></i></button>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="user">
+					<a href="wishlist.html" class="btn wishlist">
+						<i class="fa fa-heart"></i>
+						<span>(0)</span>
+					</a>
+					<a href="cart.html" class="btn cart">
+						<i class="fa fa-shopping-cart"></i>
+						<span>(0)</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+<div class="container cn1">
+		   <div class="banner-text">
+		<section class="cd-intro">
+			<img src="{{ url_for('static', filename='12.5/images/back.jpeg')}}">
+		<h2 class="cd-headline letters scale">
+			<span>clothes that are made with</span> 
+			<span class="cd-words-wrapper">
+				<b class="is-visible">Love</b>
+				<b>passion</b>
+				<b>empathy</b>
+				<b>compassion</b>
+			</span>
+		</h2>
+	</section> 
+		<div class="botton-agileits">
+			<a href="#" class="hvr-rectangle-in" data-toggle="modal" data-target="#myModal1" >Explore Now</a>
+		</div>
+			
+		</div>  
+		</div>
+	</div>
+</div>
+<!--banner end here-->
+
+						<!-- Modal1 -->
+						<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4>Sewing</h4>
+										<img src="{{ url_for('static', filename='12.5/images/g3.jpg')}}" alt=" " class="img-responsive">
+										<h3 class="subheading-w3l">Welcome to <span>TailorMade</span> Collection</h3>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //Modal1 -->
+
+<!-- banner-bottom -->
+	<div id="about" class="banner-bottom">
+		<div class="container">
+		<div class="tittle-agileinfo">
+				<h3>About Us</h3>
+			</div>
+			<div class="w3ls_banner_bottom_grid1">
+				<div class="col-md-6 w3l_banner_bottom_left">	
+					<img src="{{ url_for('static', filename='12.5/images/a1.jpg')}}" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-6 w3l_banner_bottom_right">
+					<h3 class="subheading-w3l">Welcome to <span>Sewing</span> Designs</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida tortor, molestie venenatis mauris.<br> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at vestibulum nunc.</p>
+				<ul>
+					<li><i class="fa fa-clone" aria-hidden="true"></i>Casuals</li>
+					<li><i class="fa fa-clone" aria-hidden="true"></i>Formals</li>
+					<li><i class="fa fa-clone" aria-hidden="true"></i>Daily wear</li>
+					<li><i class="fa fa-clone" aria-hidden="true"></i>Accessories</li>
+				</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom -->
+<!--latest-works-->
+<div class="latest-works" id="works">
+<div class="container">
+		<div class="tittle-agileinfo">
+				<h3 class="white-w3ls">Latest Works</h3>
+			</div>
+			<div class="col-md-8 agileits_banner_bottom_grid_three">
+				<div class="agileinfo_banner_bottom_grid_three_left">
+					<div class="wthree_banner_bottom_grid_three_left1 grid">
+						<figure class="effect-roxy">
+							<img src="{{ url_for('static', filename='12.5/images/a2.jpg')}}" alt=" " class="img-responsive" />
+							<figcaption>
+								<h3><span>F</span>orever</h3>
+								<p>Vestibulum pulvinar lobortis lorem lectus pretium non.</p>
+							</figcaption>			
+						</figure>
+					</div>
+					<p class="w3_agileits_para">Pellentesque vehicula augue eget nisl ullamcorper, 
+						molestie blandit ipsum auctor. Mauris volutpat augue dolor.</p>
+				</div>
+				<div class="agileinfo_banner_bottom_grid_three_left">
+				<p class="w3_agileits_para">Pellentesque vehicula augue eget nisl ullamcorper, 
+						molestie blandit ipsum auctor. Mauris volutpat augue dolor.</p>
+					<div class="wthree_banner_bottom_grid_three_left1 grid">
+						<figure class="effect-roxy">
+							<img src="{{ url_for('static', filename='12.5/images/a3.jpg')}}" alt=" " class="img-responsive" />
+							<figcaption>
+								<h3><span>T</span>rending</h3>
+								<p>Vestibulum pulvinar lobortis lorem lectus pretium non.</p>
+							</figcaption>			
+						</figure>
+					</div>
+					
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 agileinfo_banner_bottom_grid_three_left bnr-btm3">
+					<div class="wthree_banner_bottom_grid_three_left1 grid">
+						<figure class="effect-roxy">
+							<img src="{{ url_for('static', filename='12.5/images/a4.jpg')}}" alt=" " class="img-responsive" />
+							<figcaption>
+								<h3><span>S</span>potlight</h3>
+								<p>Vestibulum pulvinar lobortis lorem lectus pretium non.</p>
+							</figcaption>			
+						</figure>
+					</div>
+					<p class="w3_agileits_para">Pellentesque vehicula augue eget nisl ullamcorper, 
+						molestie blandit ipsum auctor. Mauris volutpat augue dolor.</p>
+				</div>
+				<div class="clearfix"> </div>
+</div>
+</div>
+<!--//Latest works-->
+<!-- services -->
+	<div class="services" id="services">
+		<div class="container">
+		<div class="tittle-agileinfo">
+				<h3>Featured Services</h3>
+			</div>
+			<div class="w3_agileits_services_grids">
+			<div class="w3_agileits_services_left">
+				<img src="{{ url_for('static', filename='12.5/images/services.jpg')}}" alt=""/>
+			</div>
+			<div class="w3_agileits_services_right">
+				<div class="col-md-6 w3_agileits_services_grid">
+					<div class="w3_agileits_services_grid_agile">
+						
+					
+					</div>
+				</div>
+				<div class="col-md-6 w3_agileits_services_grid">
+					<div class="w3_agileits_services_grid_agile">
+						<div class="w3_agileits_services_grid_1">
+							<i class="fa fa-scissors" aria-hidden="true"></i>
+						</div>
+						<h3>TailorMade</h3>
+						<p>Donec semper rutrum ipsum et bibendum. Sed condimentum dolor velit.</p>
+					</div>
+				</div>
+				<div class="col-md-6 w3_agileits_services_grid">
+					<div class="w3_agileits_services_grid_agile">
+						<div class="w3_agileits_services_grid_1">
+							<i class="fa fa-thumb-tack" aria-hidden="true"></i>
+						</div>
+						<h3>Stunning</h3>
+						<p>Donec semper rutrum ipsum et bibendum. Sed condimentum dolor velit.</p>
+					</div>
+				</div>
+				<div class="col-md-6 w3_agileits_services_grid">
+					<div class="w3_agileits_services_grid_agile">
+						<div class="w3_agileits_services_grid_1">
+							<i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+						</div>
+						<h3>Comforting</h3>
+						<p>Donec semper rutrum ipsum et bibendum. Sed condimentum dolor velit.</p>
+					</div>
+				</div>
+				<div class="col-md-6 w3_agileits_services_grid">
+					<div class="w3_agileits_services_grid_agile">
+						<div class="w3_agileits_services_grid_1">
+							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+						</div>
+						<h3>Timeless</h3>
+						<p>Donec semper rutrum ipsum et bibendum. Sed condimentum dolor velit.</p>
+					</div>
+				</div>
+				<div class="col-md-6 w3_agileits_services_grid">
+					<div class="w3_agileits_services_grid_agile">
+						<div class="w3_agileits_services_grid_1">
+							<i class="fa fa-link" aria-hidden="true"></i>
+						</div>
+						<h3>Flawless</h3>
+						<p>Donec semper rutrum ipsum et bibendum. Sed condimentum dolor velit.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //services -->
+<!-- about -->
+<div class="about-w3layouts" >
+<div class="container">
+	<div class="tittle-agileinfo">
+				<h3 class="white-w3ls">Some Interesting Facts</h3>
+			</div>
+	<!-- schedule-bottom -->
+	<div class="schedule-bottom">
+		<div class="agileits_schedule_bottom_right">
+			<div class="w3ls_schedule_bottom_right_grid">
+				<h3 class="subheading-w3l white-w3ls">Sewing <span>Designs</span> can change how you look at <span>yourself</span>.</h3>
+				<p>Find best service at your door step</p>
+				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
+					<i class="fa fa-user-o" aria-hidden="true"></i>
+					<h4>Customers bought items</h4>
+					<h5 class="counter">792</h5>
+				</div>
+				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
+					<i class="fa fa-calendar-o" aria-hidden="true"></i>
+					<h4>Loved Product</h4>
+					<h5 class="counter">533</h5>
+				</div>
+				<div class="col-md-4 w3l_schedule_bottom_right_grid1">
+					<i class="fa fa-shield" aria-hidden="true"></i>
+					<h4>Secure Payments</h4>
+					<h5 class="counter">895</h5>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //schedule-bottom -->
+</div>
+</div>
+<!-- //about-bottom -->
+<!-- team -->
+	<div class="team" id="experts">
+		<div class="container">
+			<div class="tittle-agileinfo">
+			<h3>Meet our Customers</h3>
+			</div>
+			<div class="w3ls_banner_bottom_grids">
+			<div class="col-md-8 team-agileits-left">
+				<div class="w3_agile_team_grid">
+					<div class="w3layouts_team_grid team1">
+						<div class="w3layouts_team_grid_pos">
+							<div class="wthree_text">
+								
+							</div>
+						</div>
+					</div>
+					
+						<div class="team1-info-w3ls">
+						<h6>Regan Cole</h6>
+						<span>Designer</span>
+						<p>Donec semper rutrum ipsum et bibendum.</p>
+						</div>
+						<div class="clearfix"> </div>
+				</div>
+				<div class="w3_agile_team_grid">
+					<div class="w3layouts_team_grid team2">
+						<div class="w3layouts_team_grid_pos">
+							<div class="wthree_text">
+								
+							</div>
+						</div>
+					</div>
+					
+						<div class="team2-info-w3ls">
+						<h6>Sydney Taft</h6>
+						<span>Homemaker</span>
+						<p>Donec semper rutrum ipsum et bibendum.</p>
+						</div>
+						<div class="clearfix"> </div>
+				</div>
+				</div>
+				<div class="col-md-4 team-agileits-right">
+				<div class="w3_agile_team_grid">
+					<div class="w3layouts_team_grid team3">
+						<div class="w3layouts_team_grid_pos">
+							<div class="wthree_text">
+								
+							</div>
+						</div>
+					</div>
+					<div class="team3-info-w3ls">
+						<h6>Chris Robinson</h6>
+						<span>Proffessional</span>
+						<p>Donec semper rutrum ipsum et bibendum.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //team -->
+<!-- gallery -->	
+	<div id="gallery" class="gallery">
+		<div class="tittle-agileinfo">
+			<h3>Designs & works</h3>
+		</div>
+		<div class="w3ls_banner_bottom_grids">
+			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+				<ul id="myTab" class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#designs" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Designs</a></li>
+					<li role="presentation"><a href="#Alterations" role="tab" id="Alterations-tab" data-toggle="tab" aria-controls="Alterations">Alterations</a></li>
+					<li role="presentation"><a href="#Mending" role="tab" id="Mending-tab" data-toggle="tab" aria-controls="Mending">Mending</a></li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="designs" aria-labelledby="home-tab">
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g1.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g1.jpg')}}" alt=" " class="img-responsive" />
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g2.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g2.jpg')}}" alt=" " class="img-responsive" />
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g3.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g3.jpg')}}" alt=" " class="img-responsive" />
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g4.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g4.jpg')}}" alt=" " class="img-responsive" />
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g5.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g5.jpg')}}" alt=" " class="img-responsive" />
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g6.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g6.jpg')}}" alt=" " class="img-responsive" />
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g7.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g7.jpg')}}" alt=" " class="img-responsive" />
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g8.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g8.jpg')}}" alt=" " class="img-responsive" />
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="Alterations" aria-labelledby="Alterations-tab">
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g9.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g9.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g10.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g10.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g11.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g11.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g12.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g12.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="Mending" aria-labelledby="Mending-tab">
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g8.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g8.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g13.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g13.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g14.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g14.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g15.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g15.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g16.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g16.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-3 w3layouts_gallery_grid">
+							<a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="{{ url_for('static', filename='12.5/images/g17.jpg')}}">
+								<div class="w3layouts_team_grid">
+									<img src="{{ url_for('static', filename='12.5/images/g17.jpg')}}" alt=" " class="img-responsive">
+									<div class="w3layouts_team_grid_pos">
+										<div class="wthree_text">
+											<h4>Sewing</h4>
+											<p>Great look in Outfit</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //gallery -->
+<div class="newsletter">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Subscribe Our Newsletter</h1>
+			</div>
+			<div class="col-md-6">
+				<div class="form">
+					<input type="email" value="Your email here">
+					<button>Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<!-- //contact -->
+<!--footer-->
+<div class="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget">
+					<h2>Get in Touch</h2>
+					<div class="contact-info">
+						<p><i class="fa fa-map-marker"></i>123 E Store, Los Angeles, USA</p>
+						<p><i class="fa fa-envelope"></i>email@example.com</p>
+						<p><i class="fa fa-phone"></i>+123-456-7890</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget">
+					<h2>Follow Us</h2>
+					<div class="contact-info">
+						<div class="social">
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-linkedin-in"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<a href=""><i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget">
+					<h2>Company Info</h2>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Condition</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget">
+					<h2>Purchase Info</h2>
+					<ul>
+						<li><a href="#">Pyament Policy</a></li>
+						<li><a href="#">Shipping Policy</a></li>
+						<li><a href="#">Return Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div class="row payment align-items-center">
+			<div class="col-md-6">
+				<div class="payment-method">
+					<h2>We Accept:</h2>
+					<img src="img/payment-method.png')}}')}}" alt="Payment Method" />
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="payment-security">
+					<h2>Secured By:</h2>
+					<img src="img/godaddy.svg" alt="Payment Security" />
+					<img src="img/norton.svg" alt="Payment Security" />
+					<img src="img/ssl.svg" alt="Payment Security" />
+				</div>
+			</div>
+		</div> -->
+	</div>
+</div>
+<!--/footer -->
+<!-- js -->
+<script type="text/javascript" src="{{ url_for('static', filename='12.5/js/jquery-2.1.4.min.js')}}"></script>
+<script src="{{ url_for('static', filename='12.5/js/modernizr.js')}}"></script>	<!--banner text -->
+<script src="{{ url_for('static', filename='12.5/js/main.js')}}"></script><!--banner text -->
+<!-- stats -->
+	<script src="{{ url_for('static', filename='12.5/js/jquery.waypoints.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='12.5/js/jquery.countup.js')}}"></script>
+	<script>
+		$('.counter').countUp();
+	</script>
+<!-- //stats -->
+<!-- Lightbox -->
+	<script src="{{ url_for('static', filename='12.5/js/simpleLightbox.js')}}"></script>
+	<script>
+		$('.w3layouts_gallery_grid a').simpleLightbox();
+	</script>
+<!-- //Lightbox -->
+<script src="{{ url_for('static', filename='12.5/js/SmoothScroll.min.js')}}"></script>
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+	<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{{ url_for('static', filename='12.5/js/move-top.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='12.5/js/easing.js')}}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{{ url_for('static', filename='12.5/js/bootstrap-3.1.1.min.js')}}"></script>
 </body>
 </html>

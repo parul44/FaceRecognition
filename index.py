@@ -12,20 +12,12 @@ app.secret_key=config('SECRET_KEY')
 @app.route("/")
 def home():
     if 'fuzzy' not in session:
-        # session['fuzzy']=float(get_key())
         try:
-            session['fuzzy']=float(get_key())
+            session['fuzzy']=str(get_key())
         except:
-            session['fuzzy']=float(0)
+            session['fuzzy']=str(-1)
 
-    fashion_collection=mongo.db.fashion
-    items=fashion_collection.find({
-        'key':session['fuzzy']
-        })
-
-    print("\n\n\n"+str(items)+"\n\n\n")
-
-    return render_template(str(session['fuzzy'])+"/"+"index.html")
+    return render_template((str(session['fuzzy']))+"/"+"index.html")
 
 @app.route('/set/<key>')
 def set_key(key):
