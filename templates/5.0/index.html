@@ -1,289 +1,644 @@
-<!--A Design by W3layouts
-  Author: W3layout
-  Author URL: http://w3layouts.com
-  License: Creative Commons Attribution 3.0 Unported
-  License URL: http://creativecommons.org/licenses/by/3.0/
-  -->
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <title>Styled Fashion Category Bootstrap Responsive website Template | Home :: w3layouts</title>
-    <!--meta tags -->
-    <meta charset="UTF-8">
+
+<head>
+    <title>TailorMade Women 20-30</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Styled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-      Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="TailorMade Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
     <script>
-      addEventListener("load", function () {
-      	setTimeout(hideURLbar, 0);
-      }, false);
-      
-      function hideURLbar() {
-      	window.scrollTo(0, 1);
-      }
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
     </script>
-    <!--//meta tags ends here-->
-    <!--booststrap-->
-    <link href="{{ url_for('static', filename='5.0/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" media="all">
-    <!--//booststrap end-->
+    <!-- Custom Theme files -->
+    <link href="{{ url_for('static', filename='5.0/css/bootstrap.css')}}" type="text/css" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='5.0/css/style.css')}}" type="text/css" rel="stylesheet" media="all">
     <!-- font-awesome icons -->
-    <link href="{{ url_for('static', filename='5.0/css/fontawesome-all.min.css') }}" rel="stylesheet" type="text/css" media="all">
-    <!-- //font-awesome icons -->
-    <!--stylesheets-->
-    <link href="{{ url_for('static', filename='5.0/css/style.css') }}" rel='stylesheet' type='text/css' media="all">
-    <!--//stylesheets-->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet">
-  </head>
-  <body>
+    <link href="{{ url_for('static', filename='5.0/css/font-awesome.css')}}" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+
+    <link href="//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+</head>
+
+<body>
     
-    <!-- //banner -->
-	<section class="w3l-banner">
-			<div class="nav-sec  position-relative">
-			<nav>
-					<ul id="menu">
-				  <li>
-					<input id="check01" type="checkbox" name="menu"/>
-					<label class="menulist" for="check01">&nbsp;</label>
-					<ul class="submenu">
-                        <li><a href="index.html"  class="active">Home</a></li>
-                        <li><a href="#about" class="scroll">About</a></li>
-                        <li><a href="#service" class="scroll">Services</a></li>
-                        <li><a href="#news" class="scroll">News</a></li>                           
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				  </li>
-				</ul>
-				</nav>
-            </div>
+    <div class="nav">
+        <div class="container-fluid">
+           
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-		<div class="container">
-			<div class="baner-text text-center">
-				<h3><a href="#">Styled</a></h3>
-				<h6 class="mx-auto mt-4 pt-2">porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est</h6>
-				<a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll" href="#about" role="button">Learn More</a>
-				<div class="banner-high-lights text-center">
-					<div class="rotate">
-						<a href="#about" class="scroll">
-                               <span class="fa fa-arrow-down"></span>                 
-						</a>
-                    </div>	
-				</div>
-			</div>
-		</div>
-	</section>
-	 <!-- what we do -->
-	 <section class="wedo py-5" id="about">
-		<div class="container py-lg-5">
-			<div class="text-center">
-				<h3 class="w3_head">Integer porttitor mollisar </h3>
-				<p class="main_p mt-4 mb-4 pt-2 text-white text-center mx-auto">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum, consectetur ac ipsum </p>
-			</div>
-			<div class="wedo_top text-center py-5">
-				<ul>
-					<li><span class="fa fa-cog"></span></li>
-					<li><span class="fa fa-code"></span></li>
-					<li><span class="fa fa-copy"></span></li>
-				</ul>
-             </div>  
-	 </div>
-	</section>
-	 <!-- //what we do -->
-	 <!-- banner-bottom1 -->
-	<section class="banner-bottom" id="news">
-        <div class="banner-top row middle-grids">
-			<div class="col-lg-4 advantage-grid-info1">
-                <div class="advantage_left2 text-center">
-                    <img src="{{ url_for('static', filename='5.0/images/g6.jpg') }}" class="img-fluid" alt="">
-                </div>
-            </div> 
-            <div class="col-lg-8 advantage-grid-info">
-                <div class="advantage_left">
-					<h3>Integer porttitor mollisar <br>lorem, at molestie</h3>
-					<p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est.</p>
-				</div>
-            </div>
-        </div>
-    </section>
-	<!-- //banner-bottom1 -->
-	<!-- banner-bottom2 -->
-	 <section class="banner-bottom w3l-btm">
-        <div class="banner-top row middle-grids">
-		<div class="col-lg-8 advantage-grid-info">
-                 <div class="advantage_left">
-					<h3>Integer porttitor mollisar <br>lorem, at molestie</h3>
-					<p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est.</p>
-				</div>
-            </div>
-		<div class="col-lg-4 advantage-grid-info1">
-                <div class="advantage_left2 text-center">
-                    <img src="{{ url_for('static', filename='5.0/images/g2.jpg') }}" class="img-fluid" alt="">
-                </div>
-            </div> 
-        </div>
-    </section>
-	<!-- //banner-bottom2 -->
-	<!-- banner-bottom3 -->
-	 <section class="banner-bottom">
-        <div class="banner-top row middle-grids">
-			<div class="col-lg-4 advantage-grid-info1">
-                <div class="advantage_left2 text-center">
-                    <img src="{{ url_for('static', filename='5.0/images/g3.jpg') }}" class="img-fluid" alt="">
-                </div>
-            </div> 
-            <div class="col-lg-8 advantage-grid-info">
-                 <div class="advantage_left">
-					<h3>Integer porttitor mollisar <br>lorem, at molestie</h3>
-					<p class="mt-4">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est.</p>
-				</div>
-            </div>
-        </div>
-    </section>
-	<!-- //banner-bottom3 -->
-<!-- services -->
-	<section class="slide-wrapper py-5" id="service">
-		<div class="container py-lg-5">
-		<div class="text-center">
-			<h3 class="w3_head">Integer porttitor mollisar </h3>
-			<p class="main_p mt-4 mb-4 pt-2 text-white text-center mx-auto">Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. Proin ac fermentum est. Cras mi ipsum, consectetur ac ipsum </p>
-		</div>
-			<div class="services">
-				<div class="row service_w3top mt-5 pt-lg-5">
-                                <div class="col-lg-6 ser-lt">
-                                    <div class="d-flex services-box">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil"></span>
-                                        </div>
-                                        <!-- .Icon ends here -->
-                                        <div class="service-content">
-                                            <h2>Inagittis Lacg</h2>
-                                            <p class="serp">
-                                                Quisque sagittis lacus eu lorem sodalesd vulputate velitdipisc inagittis lacg enean adipiscing.
-                                            </p>
-                                        </div>
-                                        <!-- .Service-content ends here -->
-                                    </div>
-                                    <!-- .Services-box ends here -->
-
-                                    <div class="d-flex services-box ser-midd">
-                                        <div class="icon">
-                                            <span class="fa fa-rocket"></span>
-                                        </div>
-                                        <!-- .Icon ends here -->
-                                        <div class="service-content">
-                                            <h4>Velitdipisc Inagittis</h4>
-                                           <p class="serp">
-                                                Quisque sagittis lacus eu lorem sodalesd vulputate velitdipisc inagittis lacg enean adipiscing.
-                                            </p>
-                                        </div>
-                                        <!-- .Service-content ends here -->
-                                    </div>
-                                    <!-- .Services-box ends here -->
-									<!-- .Services-box ends here -->
-
-                                    <div class="d-flex services-box bx-4">
-                                        <div class="icon">
-                                            <span class="fa fa-paint-brush"></span>
-                                        </div>
-                                        <!-- .Icon ends here -->
-                                        <div class="service-content">
-                                            <h4>Sagittis Lacus</h4>
-                                           <p class="serp">
-                                                Quisque sagittis lacus eu lorem sodalesd vulputate velitdipisc inagittis lacg enean adipiscing.
-                                            </p>
-                                        </div>
-                                        <!-- .Service-content ends here -->
-                                    </div>
-                                    <!-- .Services-box ends here -->
-                                </div>
-                                <!-- .Col ends here -->
-                                <div class="col-lg-6 ser-rgt">
-                                    <div class="d-flex services-box bx-1">
-                                        <div class="icon">
-                                            <span class="fa fa-laptop"></span>
-                                        </div>
-                                        <!-- .Icon ends here -->
-                                        <div class="service-content">
-                                            <h4>Vulputate Velitdipisc</h4>
-                                           <p class="serp">
-                                                Quisque sagittis lacus eu lorem sodalesd vulputate velitdipisc inagittis lacg enean adipiscing.
-                                            </p>
-                                        </div>
-                                        <!-- .Service-content ends here -->
-                                    </div>
-                                    <!-- .Services-box ends here -->
-
-                                    <div class="d-flex services-box ser-midd bx-2">
-                                        <div class="icon">
-                                            <span class="fa fa-paint-brush"></span>
-                                        </div>
-                                        <!-- .Icon ends here -->
-                                        <div class="service-content">
-                                            <h4>Sagittis Lacus</h4>
-                                           <p class="serp">
-                                                Quisque sagittis lacus eu lorem sodalesd vulputate velitdipisc inagittis lacg enean adipiscing.
-                                            </p>
-                                        </div>
-                                        <!-- .Service-content ends here -->
-                                    </div>
-                                    <!-- .Services-box ends here -->
-									<!-- .Services-box ends here -->
-
-                                    <div class="d-flex services-box bx-3">
-                                        <div class="icon">
-                                            <span class="fa fa-paint-brush"></span>
-                                        </div>
-                                        <!-- .Icon ends here -->
-                                        <div class="service-content">
-                                            <h4>Sagittis Lacus</h4>
-                                           <p class="serp">
-                                                Quisque sagittis lacus eu lorem sodalesd vulputate velitdipisc inagittis lacg enean adipiscing.
-                                            </p>
-                                        </div>
-                                        <!-- .Service-content ends here -->
-                                    </div>
-                                    <!-- .Services-box ends here -->
-                                </div>
-                                <!-- .Col ends here -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="product-list.html" class="nav-item nav-link">Products</a>
+                        <a href="product-detail.html" class="nav-item nav-link">Product Detail</a>
+                        <a href="cart.html" class="nav-item nav-link">Cart</a>
+                        <a href="checkout.html" class="nav-item nav-link">Checkout</a>
+                        <a href="my-account.html" class="nav-item nav-link">My Account</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Login</a>
+                                <a href="#" class="dropdown-item">Register</a>
                             </div>
-                            <!-- .Row ends here -->
-							<!-- .Container ends here -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-                    <!-- .Services ends here -->
-	 </div>
-</section>
-			<!-- //services -->
-			<!-- footer -->
-	<section class="foot-top pt-lg-5">	
-		<div class="container py-5">
-			<div class="row pb-lg-5">
-				<div class="col-lg-6 foot-top-left">
-					<h1>Ut enim ad minim veniam,</h1>
-					<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quis nostrud exercitation</p>
-				</div>
-				<div class="col-lg-6 foot-top-rgt text-center">
-					<a class="btn btn-primary  agile-link-bnr" href="index.html" role="button">Learn More</a>
-					<div class="lear">
-						<a class="btn btn-primary mt-4  agile-link-bnr1" href="contact.html" role="button">Contact</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</section>
-	<div class="cpy-right text-center py-5">
-			<ul class="social_section_1info pt-lg-5 mb-lg-5">
-				<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-				<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-				<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-				<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-			</ul>
-			<p class="text-white">© 2018 Styled. All rights reserved | Design by
-				<a href="http://w3layouts.com" class="text-white"> W3layouts.</a>
-			</p>
-		</div>
-    <!-- //footer -->
-	
+    </div>
+    <!-- Nav Bar End -->      
     
-  </body>
+    <!-- Bottom Bar Start -->
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="{{ url_for('static', filename='5.0/images/logo.png')}}" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="user">
+                        <a href="wishlist.html" class="btn wishlist">
+                            <i class="fa fa-heart"></i>
+                            <span>(0)</span>
+                        </a>
+                        <a href="cart.html" class="btn cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>(0)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- banner -->
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider3">
+            <li class="banner banner1">
+                <div class="container">
+                    <div class="banner-text">
+                        <div class="slider-info">
+                            <span>here's what we think.</span>
+                            <h4>focus & simplicity</h4>
+                            <h3>a fairly universal design</h3>
+                            <div class="d-flex">
+                                <a href="#about" class="text-capitalize serv_link btn bg-theme2 text-dark scroll">explore
+                                    now</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#exampleModal1" class="serv_link btn bg-theme ml-3 w3_pvt-link-bnr scroll text-white">
+                                    Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="banner banner2">
+                <div class="container">
+                    <div class="banner-text">
+                        <div class="slider-info">
+                            <span>here's what we think.</span>
+                            <h4>focus & simplicity</h4>
+                            <h3>a fairly universal design</h3>
+                            <div class="d-flex">
+                                <a href="#offer" class="text-capitalize serv_link btn bg-theme2 text-dark scroll">explore
+                                    now</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#exampleModal1" class="serv_link btn bg-theme ml-3 w3_pvt-link-bnr scroll text-white">
+                                    Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- //banner -->
+    <!-- about-->
+    <section class="wthree-row py-sm-5" id="about">
+        <div class="container py-lg-5">
+            <div class="row abbot-main py-lg-5 py-4">
+                <div class="col-lg-5 about-text-grid text-left pr-lg-5">
+                    <div class="title-desc">
+                        <h3 class="main-title-w3pvt text-theme1 text-capitalize"><sup><span class="fa fa-star-o"
+                                    aria-hidden="true"></span></sup>TailorMade</h3>
+                    </div>
+                    <hr>
+                    <p class="mt-3"> Romantic, trendy or casual – shop our full selection of ladies’ dresses here. 
+                        Whether you’re on the lookout for cocktail or fitted styles, our evening dresses have got
+                         you covered. Or, if you’ve got a big night out planned, look no further than our party dresses, including everything from shimmery sequin dresses to flattering bodycon styles. 
+                        We’ve also got a number of pluz-size dresses to show off your silhouette.</p>
+
+                    <a href="#more" class="text-capitalize serv_link btn bg-theme1 scroll mt-4">view more <span class="fa fa-arrow-right"
+                            aria-hidden="true"></span></a>
+                </div>
+                <div class="col-lg-3 col-sm-6 abbot-right mt-lg-0 mt-3">
+                    <img src="{{ url_for('static', filename='5.0/images/a3.jpg')}}" class="img-fluid" alt="" />
+                    <div class="border-pos-wthree1"></div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-lg-0 mt-3 abbot-right2">
+                    <img src="{{ url_for('static', filename='5.0/images/a1.jpg')}}" class="img-fluid" alt="" />
+                    <div class="border-pos-wthree"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //about -->
+    <!-- about bottom -->
+    <div class="about-main-wthree">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 abt-left p-lg-0">
+                    <div class="abt-right p-lg-0">
+                        <div class="layer-agileits-left">
+                            <div class="ab-right">
+                                <div class="txt-ab-right">
+                                    <!-- <h5>sub title</h5> -->
+                                    <h4>universal fashion</h4>
+                                    <p>Find everything from casual day dresses to sharp office wear. We have jeans in every fit,
+                                         premium quality items and the latest fashion essentials.</p>
+                                    <a href="portfolio.html" class="text-capitalize serv_link btn bg-theme1 mt-4">view
+                                        more <span class="fa fa-arrow-right" aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-6">
+                            <div class="abt-left-top">
+                                <div class="layer-agileits1">
+                                    <div class="row">
+                                        <div class="col-12 ab-grid-left">
+                                            <!-- <h5>sub title</h5> -->
+                                            <h4>elegant look</h4>
+                                            <p>Browse our collections to find the latest in women’s 
+                                                fashion trends and update your wardrobe with stylish women’s clothes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl-sm-0 mt-sm-0 mt-4">
+                            <div class="abt-left-bottom">
+                                <div class="layer-agileits2">
+                                    <div class="row">
+                                        <div class="col-12 ab-grid-left">
+                                            <!-- <h5>sub title</h5> -->
+                                            <h4>Elegant look</h4>
+                                            <p>Check out our Conscious collection, made out of more sustainable materials,
+                                                 we bring you women’s fashion in a more sustainable way</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-4 pr-lg-0">
+                    <div class="abt-right-bg">
+                        <div class="layer-agileits-right">
+                            <div class="ab-right">
+                                <div class="txt-ab-right">
+                                    <!-- <h5>sub title</h5> -->
+                                    <h4>universal fashion</h4>
+                                    <p>Browse our collections to find the latest in women’s fashion trends and 
+                                        update your wardrobe with stylish women’s clothes.</p>
+                                    <a href="portfolio.html" class="text-capitalize serv_link btn bg-white text-dark mt-4">view
+                                        more <span class="fa fa-arrow-right text-dark" aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //about bottom -->
+    <!-- more  -->
+    <div class="services py-4 py-md-5" id="more">
+        <div class="container py-lg-5">
+            <div class="title-desc">
+                <h3 class="main-title-w3pvt text-center text-theme1 text-capitalize"><sup><span class="fa fa-star-o"
+                            aria-hidden="true"></span></sup>some more</h3>
+                <span class="line-wthree"></span>
+            </div>
+            <div class="row py-md-5">
+                <div class="col-lg-3 col-6 team-grids">
+                    <div class="services-grid-w3ls">
+                        <img src="{{ url_for('static', filename='5.0/images/p1.jpg')}}" alt="img" class="img-fluid">
+                    </div>
+
+                    <div class="serv-desc-w3ls mt-3">
+                        <h4>fashion</h4>
+                        <p>electu iciend</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-6 team-grids">
+                    <div class="services-grid-w3ls">
+                        <img src="{{ url_for('static', filename='5.0/images/p2.jpg')}}" alt="img" class="img-fluid">
+                    </div>
+
+                    <div class="serv-desc-w3ls mt-3">
+                        <h4>elegant</h4>
+                        <p>aliius orci</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-6 team-grids mt-lg-0 mt-4">
+                    <div class="services-grid-w3ls">
+                        <img src="{{ url_for('static', filename='5.0/images/p3.jpg')}}" alt="img" class="img-fluid">
+                    </div>
+
+                    <div class="serv-desc-w3ls mt-3">
+                        <h4>make over</h4>
+                        <p>llam duimg</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-6 team-grids mt-lg-0 mt-4">
+                    <div class="services-grid-w3ls">
+                        <img src="{{ url_for('static', filename='5.0/images/p4.jpg')}}" alt="img" class="img-fluid">
+                    </div>
+
+                    <div class="serv-desc-w3ls mt-3">
+                        <h4>style</h4>
+                        <p>vulputate ac</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="about.html" class="text-capitalize serv_link btn bg-theme2 text-dark mt-4">view more <span
+                        class="text-theme1 fa fa-arrow-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //more -->
+    <!-- slide -->
+    <div class="slide-wthree">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 slide-left-wthree">
+                    <div class="title-desc text-right">
+                        <h3 class="main-title-w3pvt text-theme1 text-capitalize"><sup><span class="fa fa-star-o"
+                                    aria-hidden="true"></span></sup>TailorMade</h3>
+                    </div>
+                    <hr>
+                    <p class="mt-3 text-right">   We have jeans in every fit, premium quality items and the latest fashion essentials. 
+                        Check out our Conscious collection, made out of more sustainable materials.</p>
+                    <div class="ml-auto text-right">
+                        <a href="#more" class="text-capitalize serv_link btn bg-theme1 scroll mt-4">view more <span
+                                class="fa fa-arrow-right" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 slide-right-bg"></div>
+            </div>
+        </div>
+    </div>
+    <!-- slide -->
+    <!-- featured -->
+    <div class="services py-4 py-md-5" id="services">
+        <div class="container py-lg-5">
+            <div class="title-desc">
+                <h3 class="main-title-w3pvt text-center text-theme1 text-capitalize"><sup><span class="fa fa-star-o"
+                            aria-hidden="true"></span></sup>featured</h3>
+                <span class="line-wthree"></span>
+            </div>
+            <div class="row py-md-5 pt-4">
+                <div class="col-lg-3 col-6 team-grids mb-lg-0  mb-4">
+                    <div class="services-grid-w3ls">
+                        <img src="{{ url_for('static', filename='5.0/images/p3.jpg')}}" alt="img" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="serv-desc-w3ls mt-3 text-center">
+                        <h4>make over</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 team-grids mb-lg-0  mb-4">
+                    <div class="serv-desc-w3ls mb-3 text-center">
+                        <h4>style</h4>
+                    </div>
+
+                    <div class="services-grid-w3ls">
+                        <img src="{{ url_for('static', filename='5.0/images/p4.jpg')}}" alt="img" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 team-grids">
+                    <div class="services-grid-w3ls">
+                        <img src="{{ url_for('static', filename='5.0/images/p1.jpg')}}" alt="img" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="serv-desc-w3ls mt-3 text-center">
+                        <h4>fashion</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 team-grids mt-sm-0 mt-4">
+                    <div class="serv-desc-w3ls mb-3 text-center">
+                        <h4>elegant</h4>
+                    </div>
+                    <div class="services-grid-w3ls">
+                        <img src="{{ url_for('static', filename='5.0/images/p2.jpg')}}" alt="img" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="coming_soon.html" class="text-capitalize serv_link btn bg-theme2 text-dark mt-4">view more
+                    <span class="text-theme1 fa fa-arrow-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //featured -->
+    <!-- contact phone -->
+    <!-- <div class="contact-phone bg-theme1 py-4">
+        <div class="container">
+            <div class="d-md-flex justify-content-center">
+                <p class="text-white">If you have any questions? <span class="ml-3 font-weight-bold">Call Us
+                        +12
+                        345
+                        678 </span></p>
+            </div>
+        </div>
+    </div> -->
+    <!-- //contact phone -->
+    <div class="footer">
+        <hr class = "hrfooter">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i>123 E Store, Los Angeles, USA</p>
+                            <p><i class="fa fa-envelope"></i>email@example.com</p>
+                            <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Follow Us</h2>
+                        <div class="contact-info">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Company Info</h2>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h2>Purchase Info</h2>
+                        <ul>
+                            <li><a href="#">Pyament Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="row payment align-items-center">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <h2>We Accept:</h2>
+                        <img src="img/payment-method.png')}}" alt="Payment Method" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-security">
+                        <h2>Secured By:</h2>
+                        <img src="img/godaddy.svg" alt="Payment Security" />
+                        <img src="img/norton.svg" alt="Payment Security" />
+                        <img src="img/ssl.svg" alt="Payment Security" />
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- Login modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-theme2">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-theme1">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label text-white">Username</label>
+                            <input type="text" class="form-control border" placeholder="john mercy " name="Name" id="recipient-name"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label text-white">Password</label>
+                            <input type="password" class="form-control border" placeholder="****" name="Password" id="password"
+                                required="">
+                        </div>
+                        <div class="right-w3l">
+                            <input type="submit" class="form-control border text-white bg-theme1" value="Login">
+                        </div>
+
+                        <div class="row sub-w3l my-3">
+                            <div class="col sub-w3layouts">
+                                <input type="checkbox" id="brand1" value="">
+                                <label for="brand1" class="text-white">
+                                    <span></span>Remember me?</label>
+                            </div>
+                            <div class="col forgot-w3l text-right text-dark">
+                                <a href="#" class="text-white">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <p class="text-center text-white">Don't have an account?
+                            <a href="#" data-toggle="modal" data-target="#exampleModal1" class="text-white">
+                                Register Now</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Login modal -->
+    <!-- Register modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header  bg-theme2">
+                    <h5 class="modal-title" id="exampleModalLabel1">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body  bg-theme1">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label text-white">Username</label>
+                            <input type="text" class="form-control border" placeholder="john mercy " name="Name" id="recipient-rname"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-email" class="col-form-label text-white">Email</label>
+                            <input type="email" class="form-control border" placeholder="username@email.com" name="Email"
+                                id="recipient-email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password1" class="col-form-label text-white">Password</label>
+                            <input type="password" class="form-control border" placeholder="****" name="Password" id="password1"
+                                required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2" class="col-form-label text-white">Confirm Password</label>
+                            <input type="password" class="form-control border" placeholder="****" name="Confirm Password"
+                                id="password2" required="">
+                        </div>
+                        <div class="sub-w3l">
+                            <div class="sub-w3layouts">
+                                <input type="checkbox" id="brand2" value="">
+                                <label for="brand2" class="mb-3 text-white">
+                                    <span></span>I Accept to the Terms & Conditions</label>
+                            </div>
+                        </div>
+                        <div class="right-w3l">
+                            <input type="submit" class="form-control bg-theme1 text-white" value="Register">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // Register modal -->
+    <!-- js -->
+    <script src="{{ url_for('static', filename='5.0/js/jquery-2.2.3.min.js')}}"></script>
+    <!-- //js -->
+    <!--  menu toggle -->
+    <script src="{{ url_for('static', filename='5.0/js/menu.js')}}"></script>
+    <!-- Banner  Responsiveslides -->
+    <script src="{{ url_for('static', filename='5.0/js/responsiveslides.min.js')}}"></script>
+    <script>
+        // You can also use"$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: false,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //Banner  Responsiveslides -->
+    <!-- script for password match -->
+    <script>
+        window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- script for password match -->
+    <!-- start-smooth-scrolling -->
+    <script src="{{ url_for('static', filename='5.0/js/move-top.js')}}"></script>
+    <script src="{{ url_for('static', filename='5.0/js/easing.js')}}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="{{ url_for('static', filename='5.0/js/SmoothScroll.min.js')}}"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ url_for('static', filename='5.0/js/bootstrap.js')}}"></script>
+</body>
+
 </html>
