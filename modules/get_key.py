@@ -10,7 +10,7 @@ def get_key():
     face = FaceCV(depth=depth, width=width)
 
     #Predicting Age and Gender
-    K.clear_session()
+    #K.clear_session()
     predicted_ages,predicted_genders=face.detect_face()
 
     #Calculating Session Key
